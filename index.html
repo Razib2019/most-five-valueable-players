@@ -45,9 +45,9 @@
                             <span>36 Goals</span> -
                             <span>120 Assist</span>
                         </p>
-                        <button id="btn-messi"
-                            class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2">
-                            SELECT
+                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2"
+                            onclick="addToSelectedPlayers(this)">
+                            SELECT 1
                         </button>
                     </div>
                     <div class="bg-black h-auto">
@@ -57,8 +57,9 @@
                             <span>26 Goals</span> -
                             <span>110 Assist</span>
                         </p>
-                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2">
-                            SELECT
+                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2"
+                            onclick="addToSelectedPlayers(this)">
+                            SELECT 2
                         </button>
                     </div>
                     <div class="bg-black h-auto">
@@ -68,8 +69,9 @@
                             <span>20 Goals</span> -
                             <span>90 Assist</span>
                         </p>
-                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2">
-                            SELECT
+                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2"
+                            onclick="addToSelectedPlayers(this)">
+                            SELECT 3
                         </button>
                     </div>
                     <div class="bg-black h-auto">
@@ -79,8 +81,9 @@
                             <span>25 Goals</span> -
                             <span>56 Assist</span>
                         </p>
-                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2">
-                            SELECT
+                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2"
+                            onclick="addToSelectedPlayers(this)">
+                            SELECT 4
                         </button>
                     </div>
                     <div class="bg-black h-auto">
@@ -90,8 +93,9 @@
                             <span>30 Goals</span> -
                             <span>135 Assist</span>
                         </p>
-                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2">
-                            SELECT
+                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2"
+                            onclick="addToSelectedPlayers(this)">
+                            SELECT 5
                         </button>
                     </div>
                     <div class="bg-black h-auto">
@@ -101,23 +105,23 @@
                             <span>22 Goals</span> -
                             <span>77 Assist</span>
                         </p>
-                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2">
-                            SELECT
+                        <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 my-4 p-2"
+                            onclick="addToSelectedPlayers(this)">
+                            SELECT 6
                         </button>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-1 gap-6 ">
                 <div class="bg-black">
-                    <h1 class="text-xl text-white text-center font-bold mt-4">Selected - V</h1>
+                    <h1 class="text-xl text-white text-center font-bold mt-4">Selected Player <span
+                            class="text-blue-600" id="total-added-player">0</span></h1>
                     <img class="mx-auto" src="./images/Ureg-Ureg Marker.png" alt="">
-                    <ol class="text-white px-4 mt-8">
-                        <li class="p-2">1.</li>
-                        <li class="p-2">2.</li>
-                        <li class="p-2">3.</li>
-                        <li class="p-2">4.</li>
-                        <li class="p-2">5.</li>
-                    </ol>
+                    <table class="mt-6 mx-1 w-full">
+                        <tbody class="text-white" id="selceted-player">
+
+                        </tbody>
+                    </table>
                 </div>
                 <div class="bg-black">
                     <h1 class="text-xl text-white text-center font-bold mt-4">Budget</h1>
@@ -150,6 +154,7 @@
         <hr>
         <p class="text-white text-center my-8">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
+    <script src="./js/players.js"></script>
 </body>
 
 </html>
