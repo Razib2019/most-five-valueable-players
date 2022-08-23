@@ -1,3 +1,15 @@
 body {
     background-color: #151515;
 }
+
+/* 
+if (playerArray.length < 5) {
+        playerArray.push(playerObj);
+        element.disabled = true;
+    }
+
+    else {
+        alert('Please dont add more than 5 players!!')
+    }
+
+*/
