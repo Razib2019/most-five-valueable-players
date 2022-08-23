@@ -4,16 +4,6 @@ function display(players) {
     const listContainer = document.getElementById('selceted-player');
     listContainer.innerText = '';
     for (i = 0; i < players.length; i++) {
-        /* 
-                if (playerArray.length < 5) {
-                playerArray.push(playerObj);
-                element.disabled = true;
-            }
-        
-            else {
-                alert('Please dont add more than 5 players!!')
-            }
-                */
         if (i === 5) {
             alert('You Can not add more than 5 player');
             return;

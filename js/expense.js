@@ -4,7 +4,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerExpense = getInputFieldValueById('player-expense-field');
 
     if (isNaN(perPlayerExpense)) {
-        alert('Please enter a valid amount and make sure its not text or minus number')
+        alert('Please enter a valid Number As Input and make sure it will not text or Negative number');
         return '';
     }
 
@@ -25,7 +25,7 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const coachExpense = getInputFieldValueById('coach-expense-field');
 
     if (isNaN(managerExpense) || isNaN(coachExpense)) {
-        alert('Please enter a valid amount and make sure its not text or minus number');
+        alert('Please enter a valid Number As Input and make sure it will not text or Negative number');
         return '';
     }
 
