@@ -1,3 +1,4 @@
+// Calculate Total Player Expense
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
     const perPlayerExpense = getInputFieldValueById('player-expense-field');
@@ -14,6 +15,8 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     setTextElementValueById('players-total-expenses', totalPlayerExpense);
 
 });
+
+// Calculate Total Expense 
 
 document.getElementById('btn-calculate-total').addEventListener('click', function () {
 
