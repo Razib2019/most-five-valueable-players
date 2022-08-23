@@ -126,22 +126,24 @@
                 <div class="bg-black">
                     <h1 class="text-xl text-white text-center font-bold mt-4">Budget</h1>
                     <img class="mx-auto mb-8" src="./images/Ureg-Ureg Marker.png" alt="">
-                    <h2 class="text-md font-semibold text-white text-center">Per Player: <span class="text-black"><input
-                                class="px-2" type="text" placeholder="$ amount per player expense"></span>
+                    <h2 class="text-md font-semibold text-white text-center">
+                        Per Player: <span class="text-black"><input id="player-expense-field" type="text">00</span>
                     </h2>
-                    <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 mt-6 p-1">
+                    <button id="btn-calculate"
+                        class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 mt-6 p-1">
                         Calculate
                     </button>
-                    <h2 class="text-md font-semibold text-white text-center mt-5">Player Expenses: $<span>00</span>
+                    <h2 class="text-md font-semibold text-white text-center mt-5">Player
+                        Expenses: $<span id="players-total-expenses">00</span>
                     </h2>
-                    <h2 class="text-md font-semibold text-white text-center mt-5">Manager: <span
-                            class="text-black"><input class="px-2" type="text"
-                                placeholder="$ amount for manage expense"></span>
+                    <h2 class="text-md font-semibold text-white text-center mt-4">
+                        Manager: <span class="text-black"><input id="manager-expense-field" type="text">00</span>
                     </h2>
-                    <h2 class="text-md font-semibold text-white text-center mt-5">Coach: <span class="text-black"><input
-                                class="px-2" type="text" placeholder="$ amount for coach expense"></span>
+                    <h2 class="text-md font-semibold text-white text-center mt-4">
+                        Coach: <span class="text-black"><input id="coach-expense-field" type="text">00</span>
                     </h2>
-                    <button class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 mt-6 p-1">
+                    <button id="btn-calculate-total"
+                        class="bg-blue-900 hover:bg-blue-500 font-semibold text-white w-4/5 mx-8 mt-6 p-1">
                         Calculate Total
                     </button>
                     <h2 class="text-md font-semibold text-orange-600 text-center mt-5">Total: $<span>00</span>
@@ -155,6 +157,7 @@
         <p class="text-white text-center my-8">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
     <script src="./js/players.js"></script>
+    <script src="./js/expense.js"></script>
 </body>
 
 </html>
