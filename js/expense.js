@@ -1,10 +1,9 @@
-// Calculate Total Player Expense
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
     const perPlayerExpense = getInputFieldValueById('player-expense-field');
 
     if (isNaN(perPlayerExpense)) {
-        alert('Please enter a valid Number As Input and make sure it will not text or Negative number');
+        alert('Please enter a valid Number and make sure it Will Never text or Negative Value');
         return '';
     }
 
@@ -16,8 +15,6 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
 });
 
-// Calculate Total Expense 
-
 document.getElementById('btn-calculate-total').addEventListener('click', function () {
 
     const managerExpense = getInputFieldValueById('manager-expense-field');
@@ -25,7 +22,7 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const coachExpense = getInputFieldValueById('coach-expense-field');
 
     if (isNaN(managerExpense) || isNaN(coachExpense)) {
-        alert('Please enter a valid Number As Input and make sure it will not text or Negative number');
+        alert('Please enter a valid Number and make sure it Will Never text or Negative Value');
         return '';
     }
 
