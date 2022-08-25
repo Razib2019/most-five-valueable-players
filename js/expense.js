@@ -1,3 +1,4 @@
+// Event Handler for Budget or Expense Section's Calculate Button 
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
     const perPlayerExpense = getInputFieldValueById('player-expense-field');
@@ -15,6 +16,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
 });
 
+// Event Handler for Budget or Expense Section's Calculate Total Button 
 document.getElementById('btn-calculate-total').addEventListener('click', function () {
 
     const managerExpense = getInputFieldValueById('manager-expense-field');
